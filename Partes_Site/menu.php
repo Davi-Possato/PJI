@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDEX</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
-    <header>
-        <div class="flex-container menu">
-          <div><img src="../imagens/carplace.png" alt="" height="100px"></div>
-          <ul class="list-itens">
-            <li><a href="" target="_self">COMPRAR</a></li>
-            <li><a href="" target="_self">VENDER</a></li>
-            <li><a href="" target="_self">Entrar</a></li>
-          </ul>
-        </div>
-      </header>
+<nav class="nav">
+	<ul>
+		<li class="drop"><a href="#">Comprar</a>
+			<ul class="dropdown">
+				<li><a href="#">Novos</a></li>
+				<li><a href="#">Seminovos</a></li>
+				<li><a href="#">Usados</a></li>
+			</ul>
+		</li>
+    <li><a href="./Classes/formCarro.php">Vender</a>
+	</ul>
+</nav>
+<script>
+  $(".drop")
+  .mouseover(function() {
+  $(".dropdown").show(300);
+  });
+  $(".drop")
+  .mouseleave(function() {
+  $(".dropdown").hide(300);     
+  });
+</script>
 </body>
 </html>

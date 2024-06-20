@@ -10,12 +10,14 @@
 <body>
 <nav class="nav">
 	<ul>
-		<li class="drop"><a href="#">Comprar</a>
-			<ul class="dropdown">
-				<li><a href="#">Novos</a></li>
-				<li><a href="#">Seminovos</a></li>
-				<li><a href="#">Usados</a></li>
-			</ul>
+		<li class="drop"><a href="./parts/formCarro.php">Form Carro</a>
+    <li class="drop"><a href="./parts/formVendedor.php">Form Vendedor</a>
+    <li class="drop"><a href="./parts/formCliente.php">Form Cliente</a>
+			<!--<ul class="dropdown">
+				<li><a href="./parts/formCliente.php">Novos</a></li>
+				<li><a href="./parts/formVendedor.php">Seminovos</a></li>
+				<li><a href="./parts/formCarro.php">Usados</a></li>
+			</ul>-->
 		</li>
     <li><a href="./Classes/formCarro.php">Vender</a>
 	</ul>
